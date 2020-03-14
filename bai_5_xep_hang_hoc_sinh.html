@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xếp hạng học sinh</title>
+</head>
+<body>
+<script>
+    let diembaikiemtra= parseInt(prompt("Điểm bài kiểm tra"));
+    let diemgiuaky= parseInt(prompt("Điểm thi giữa kì"));
+    let diemcuoiki= parseInt(prompt("Điểm thi cuối kì"));
+    let diemtrungbinh= (diembaikiemtra+diemgiuaky+diemcuoiki)/3;
+
+    if (diemtrungbinh>9){
+        alert("Hoc sinh xuat sac voi so diem trung binh ca ki la : " + diemtrungbinh.toFixed(1));
+    } else if (diemtrungbinh>8){
+        alert("Hoc sinh kha voi so diem trung binh ca ki la : " + diemtrungbinh.toFixed(1));
+    } else if (diemtrungbinh>6.5){
+        alert("Hoc sinh tien tien voi so diem trung binh ca ki la : " + diemtrungbinh.toFixed(1));
+    } else if (diemtrungbinh>=5) {
+        alert("Hoc sinh trung binh voi so diem trung binh ca ki la : " + diemtrungbinh.toFixed(1));
+    }else {
+        alert("Hoc sinh kem voi so diem trung binh ca ki la : " + diemtrungbinh.toFixed(1));
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính hoa hồng nhận được dựa vào doanh số bán hàng</title>
+</head>
+<body>
+<script>
+    let doanhso = parseInt(prompt("Doanh số bán hàng là :"));
+    let hoahongcoban= doanhso*0.01;
+    if (doanhso>=60000000){
+        alert("Hoa hong cua ban duoc huong la "+(hoahongcoban+5000000) );
+    } else {
+        if (doanhso>=50000000){
+            alert("Hoa hong cua ban duoc huong la "+(hoahongcoban+3000000) );
+        } else {
+            if (doanhso>=30000000) {
+                alert("Hoa hong cua ban duoc huong la "+(hoahongcoban+1000000) );
+            }else {
+                alert("Hoa hong cua ban duoc huong la "+ hoahongcoban );
+            }
+        }
+    }
+</script>
+</body>
+</html>
